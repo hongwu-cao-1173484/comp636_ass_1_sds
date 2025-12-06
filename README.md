@@ -67,8 +67,7 @@
 | 44 | Class with no students | View Piwakawaka initially | "No students currently enrolled" | Empty class display |
 | 45 | Name with hyphen | First Name: Mary-Jane | Accepted | Name validation (hyphen allowed) |
 | 46 | Name with space | Family Name: Van Der Berg | Accepted | Name validation (spaces allowed) |
-| 47 | Very long email | 50+ character email | Accepted if valid format | Email validation flexibility |
-| 48 | Student moving from Grade 5 to 6 | Change grade from 5 to 6 | Would move to Senior Dance | Grade-based class priority |
+| 47 | Student moving from Grade 5 to 6 | Change grade from 5 to 6 | Would move to Senior Dance | Grade-based class priority |
 
 ## Reflection
 
@@ -89,6 +88,4 @@ The most difficult aspect of this assessment was correctly implementing the age-
    - Providing clear, helpful error messages that guide users to correct their input
    - Validating that dates aren't in the future
 
-4. **Testing Edge Cases**: Ensuring the system correctly handled boundary conditions (e.g., a student exactly 8.5 years old, leap year birthdays, students with grade 6 vs grade 5) required careful testing and adjustment of the conditional logic.
-
-The solution required understanding Python's date arithmetic, careful logical thinking about the order of conditions, and thorough testing with various edge cases to ensure the bug was truly fixed and no new bugs were introduced.
+4. **Testing Edge Cases**: Ensuring the system correctly handled boundary conditions (e.g., a student exactly 8.5 years old, leap year birthdays) required careful testing and adjustment of the conditional logic.

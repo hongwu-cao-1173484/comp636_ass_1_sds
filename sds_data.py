@@ -1,22 +1,29 @@
 # ============== SELWYN EVENT TICKETING SYSTEM ==============
-# Student Name: 
-# Student ID : 
+# Student Name: Hongwu Cao
+# Student ID : 1173484
 # =============================================================
 
 
-# * * * * * * * * * ======= WARNING ======= * * * * * * * * * * * 
-# * * * Do not add any functions or variables to this file. * * *  
+# * * * * * * * * * ======= WARNING ======= * * * * * * * * * * *
+# * * * Do not add any functions or variables to this file. * * *
 # * * *                                                     * * *
-# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 from datetime import date,datetime,timedelta
 
 
-classes = { "Glowworms": [816,786], "Fireflies": [121], "Butterflies": [343, 810], "Piwakawaka": [], "Robins": [801]}
+classes = {
+    "Glowworms": [816, 786],
+    "Fireflies": [121],
+    "Butterflies": [343, 810],
+    "Piwakawaka": [],
+    "Robins": [801],
+    "Bellbirds": [],        # New class
+    "Senior Dance": []      # New class
+}
 
 
-
-# [id, first_name, family_name, birthdate ,email address]
+# [id, first_name, family_name, birthdate, grade, email address]
 students = [ 
 	[816, 'Simon', 'Charles', date(2021,7,15),0, 'simon@charles.nz'],
 	[343, 'Charlie', 'Charles', date(2018,1,25),2, 'charlie@charles.nz'],
@@ -24,6 +31,20 @@ students = [
 	[786, 'Jack', 'Hopere', date(2022,2,10),0, 'Jack643@gmail.com'],
 	[801, 'Chloe', 'Mathewson', date(2015,3,15),4, 'Chloe572@gmail.com'],
 	[121, 'Kate', 'McLeod', date(2019,7,15),1, 'KMcLeod112@gmail.com'],
+    # New students
+    [817, "Emma", "Wilson", date(2020, 3, 15), 0, "emma@wilson.nz"],
+    [818, "Oliver", "Brown", date(2018, 6, 20), 1, "oliver@brown.nz"],
+    [819, "Sophia", "Taylor", date(2017, 9, 10), 2, "sophia@taylor.nz"],
+    [820, "Lucas", "Anderson", date(2016, 4, 5), 3, "lucas@anderson.nz"],
+    [821, "Isabella", "Thomas", date(2015, 11, 25), 4, "isabella@thomas.nz"],
+    [822, "Mason", "Jackson", date(2013, 2, 14), 5, "mason@jackson.nz"],
+    [823, "Ava", "White", date(2011, 8, 30), 6, "ava@white.nz"],
+    [824, "Liam", "Harris", date(2019, 5, 12), 0, "liam@harris.nz"],
+    [825, "Mia", "Martin", date(2017, 3, 8), 0, "mia@martin.nz"],
+    [826, "Noah", "Garcia", date(2016, 1, 20), 0, "noah@garcia.nz"],
+    [827, "Charlotte", "Martinez", date(2014, 7, 5), 0, "charlotte@m.nz"],
+    [828, "James", "Rodriguez", date(2012, 9, 18), 0, "james@rodriguez.nz"],
+    [829, "Amelia", "Lee", date(2010, 12, 1), 7, "amelia@lee.nz"]
 
 ]
 
@@ -62,4 +83,3 @@ def display_formatted_row(row, format_str):
             row[index] = str(item)
     # Apply the formatting in format_str to all items in row
     print(format_str.format(*row))
-
