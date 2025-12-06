@@ -79,7 +79,7 @@ The most difficult aspect of this assessment was correctly implementing the age-
 
 1. **Decimal Age Calculation**: The original code used a simple integer age calculation (`calculate_age()`), which only returned whole years. This caused the bug where students who should be in Piwakawaka (8.5+ years) were incorrectly assigned to Butterflies (7+ years). I had to create a separate `calculate_age_with_months()` function that returns age as a decimal (e.g., 8.5 years) to properly handle the half-year requirement.
 
-2. **Logic Flow in Class Assignment**: The original `add_student_to_classes()` function had flawed conditional logic with incorrect age comparisons (using `<=` instead of `>=`) and didn't properly prioritize grade over age. I had to restructure the entire function using `if-elif-else` statements in the correct order, checking from highest to lowest class level, ensuring grade-based assignment takes precedence over age-based assignment.
+2. **Logic Flow in Class Assignment**: The comparison logic in the original `add_student_to_classes()` function is not entirely consistent with the requirements. Most classes are matched based on either grade or age, but the original logic stopped comparing age after matching grade, potentially leading to incorrect matches.
 
 3. **Validation Complexity**: Implementing comprehensive input validation was challenging because it required:
    - Creating separate validation functions for each input type

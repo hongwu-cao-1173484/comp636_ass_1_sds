@@ -368,7 +368,7 @@ def disp_menu():
 # Repeat this loop until the user enters an "X" or "x"
 
 # Rebuild class assignments based on current student data
-# This ensures all students are correctly assigned including those who should be in Piwakawaka
+# This ensures all students are correctly assigned
 for class_name in classes:
     classes[class_name] = []
 
